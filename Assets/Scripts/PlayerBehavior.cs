@@ -1,0 +1,25 @@
+using UnityEngine;
+
+public class PlayerBehavior : MonoBehaviour
+{
+
+    [SerializeField] private float movingSpeed = 5f;
+
+
+    private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+
+    private void FixedUpdate()
+    {
+
+        Vector2 inputVector = GameInput.Instance.GetMovementVector();
+        inputVector = inputVector.normalized;
+        rb.MovePosition(rb.position + inputVector * (movingSpeed * Time.fixedDeltaTime));
+
+    }
+}
