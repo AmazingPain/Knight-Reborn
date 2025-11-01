@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 5861788e245c0c24dae0297182b4385e
+guid: ea5d414a8a6263640a24804b0fb89fe8
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -1071302430762533504
-    second: Hero_Idle_0
-  - first:
-      213: 402119133011603176
-    second: Hero_Idle_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
