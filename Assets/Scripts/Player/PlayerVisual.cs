@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerVisual : MonoBehaviour
@@ -20,9 +18,9 @@ public class PlayerVisual : MonoBehaviour
         AdjustPlayerFacingDirection();
     }
 
-    private void AdjustPlayerFacingDirection ()
+    private void AdjustPlayerFacingDirection()
     {
-        Vector3 mousePos =  GameInput.Instance.GetMousePosition();
+        Vector3 mousePos = GameInput.Instance.GetMousePosition();
         Vector3 playerPosition = PlayerBehavior.Instance.GetPlayeScreenPosition();
 
         if (mousePos.x < playerPosition.x)
