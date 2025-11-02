@@ -6,7 +6,7 @@ using KnightReborn.Utilities;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private State startingState;
-    [SerializeField] private float roamingDistanceMax = 7f;
+    [SerializeField] private float roamingDistanceMax = 10f;
     [SerializeField] private float roamingDistanceMin = 3f;
     [SerializeField] private float roamingTimingMax = 2f;
 
@@ -65,7 +65,7 @@ public class EnemyAI : MonoBehaviour
         if (sourcePosition.x > targetPosition.x)
         {
             transform.rotation = Quaternion.Euler(0, -180, 0);
-        }
+        } 
         else
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
