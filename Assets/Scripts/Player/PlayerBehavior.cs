@@ -7,6 +7,7 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] private float movingSpeed = 5f;
     private float minSpeed = 0.1f;
     private bool isRunning = false;
+    private Vector2 inputVector;
 
     private Rigidbody2D rb;
     
@@ -16,6 +17,10 @@ public class PlayerBehavior : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        inputVector = GameInput.Instance.GetMovementVector();
+    }
 
     private void FixedUpdate()
     {
@@ -24,7 +29,7 @@ public class PlayerBehavior : MonoBehaviour
 
     private void HandleMovement()
     {
-        Vector2 inputVector = GameInput.Instance.GetMovementVector(); 
+        
         rb.MovePosition(rb.position + inputVector * (movingSpeed * Time.fixedDeltaTime));
 
         if (Mathf.Abs(inputVector.x) > minSpeed || Mathf.Abs(inputVector.y)>minSpeed)
