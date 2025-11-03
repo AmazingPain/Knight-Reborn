@@ -1,15 +1,50 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class Staff : MonoBehaviour
 {
+    [SerializeField] private int _damageStaff = 2;
+    public event EventHandler OnStaffAttack;
+    private PolygonCollider2D _polygonCollider2D;
 
-    public event EventHandler OnSwordAttack;
+    private void Awake()
+    {
+        _polygonCollider2D = GetComponent<PolygonCollider2D>();
+    }
+
+    private void Start()
+    {
+        AttackColliderTurnOff();
+    }
+
     public void Attack()
     {
-        OnSwordAttack?.Invoke(this, EventArgs.Empty);
+        AttackColliderTurnOffOn();
+        OnStaffAttack?.Invoke(this, EventArgs.Empty);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.TryGetComponent(out EnemyEntity enemyEntity))
+        {
+            enemyEntity.TakeDamage(_damageStaff);
+        }
+    }
+
+    public void AttackColliderTurnOff()
+    {
+        _polygonCollider2D.enabled = false;
+    }
+
+    private void AttackColliderTurnOn()
+    {
+        _polygonCollider2D.enabled = true;
+    }
+
+    private void AttackColliderTurnOffOn()
+    {
+        AttackColliderTurnOff();
+        AttackColliderTurnOn();
+    }
+
 }

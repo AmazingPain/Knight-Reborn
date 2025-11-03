@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class StaffVisual : MonoBehaviour
@@ -16,11 +14,16 @@ public class StaffVisual : MonoBehaviour
 
     private void Start()
     {
-        staff.OnSwordAttack += Staff_OnSwordAttack;
+        staff.OnStaffAttack += Staff_OnStaffAttack;
     }
 
-    private void Staff_OnSwordAttack(object sender, System.EventArgs e)
+    private void Staff_OnStaffAttack(object sender, System.EventArgs e)
     {
         animatorStaff.SetTrigger(ATTACK);
+    }
+
+    public void TriggerEndAttackAnimation()
+    {
+        staff.AttackColliderTurnOff();
     }
 }
