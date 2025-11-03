@@ -1421,7 +1421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 529217865053184218, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
       propertyPath: m_Speed
-      value: 0
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8129453632388527230, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
+      propertyPath: m_Name
+      value: Enemy_SkeletonVisual
       objectReference: {fileID: 0}
     - target: {fileID: 8554266492330636914, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
       propertyPath: m_LocalPosition.x
