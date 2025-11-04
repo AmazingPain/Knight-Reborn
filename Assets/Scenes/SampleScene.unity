@@ -168,8 +168,9 @@ GameObject:
   m_Component:
   - component: {fileID: 186991172}
   - component: {fileID: 186991174}
-  - component: {fileID: 186991173}
+  - component: {fileID: 186991176}
   - component: {fileID: 186991175}
+  - component: {fileID: 186991173}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -271,6 +272,52 @@ CapsuleCollider2D:
   m_Offset: {x: -0.016554372, y: 0.12415467}
   m_Size: {x: 0.7518964, y: 0.203403}
   m_Direction: 1
+--- !u!61 &186991176
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186991169}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.025345564, y: 1.2292745}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8479247, y: 2.2419477}
+  m_EdgeRadius: 0
 --- !u!4 &199596041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8373480932740779768, guid: 47b9d0c1765cd99438d07db73590e8bf, type: 3}
@@ -1419,21 +1466,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Skeleton
       objectReference: {fileID: 0}
-    - target: {fileID: 529217865053184218, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
-      propertyPath: m_Speed
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8129453632388527230, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
-      propertyPath: m_Name
-      value: Enemy_SkeletonVisual
-      objectReference: {fileID: 0}
+    - target: {fileID: 5928388406626171041, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
+      propertyPath: enemySO
+      value: 
+      objectReference: {fileID: 11400000, guid: 7559dc9215c513a4c9dd0e6ca4849642, type: 2}
     - target: {fileID: 8554266492330636914, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.59
+      value: 4.89
       objectReference: {fileID: 0}
     - target: {fileID: 8554266492330636914, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.85
+      value: -4.15
       objectReference: {fileID: 0}
     - target: {fileID: 8554266492330636914, guid: e7204804d8e1b11478c53b74ac9dfede, type: 3}
       propertyPath: m_LocalPosition.z
