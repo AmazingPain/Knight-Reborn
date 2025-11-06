@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 141
+  controlID: 134
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 142
+  controlID: 135
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -250,7 +250,7 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 15}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 3
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 86
+  controlID: 60
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -321,14 +321,14 @@ MonoBehaviour:
     y: 0
     width: 1262
     height: 266
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 23}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 23}
   - {fileID: 24}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,8 +378,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1920
     y: 73
-    width: 899
-    height: 686
+    width: 847
+    height: 670
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -393,32 +393,32 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_ActionMapsTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bd524667
-    m_LastClickedID: 1732661949
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Combat
+      m_OriginalName: Combat
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 1732661949
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
   m_ActionsTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 114f49a7
-    m_LastClickedID: -1488367855
-    m_ExpandedIDs: 7ba3b3f20558a00d24aa4832bd524667
+    m_SelectedIDs: 00712f17
+    m_LastClickedID: 388985088
+    m_ExpandedIDs: 7ba3b3f20558a00d00712f1724aa4832bd524667
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -444,10 +444,13 @@ MonoBehaviour:
         selectedIndex: 5
         scroll: {x: 0, y: 0}
       - itemId: 656259478
-        selectedIndex: 2
+        selectedIndex: 0
         scroll: {x: 0, y: 0}
       - itemId: 82801685
         selectedIndex: 4
+        scroll: {x: 0, y: 0}
+      - itemId: -298396491
+        selectedIndex: -1
         scroll: {x: 0, y: 0}
     m_ManualPathEditMode: 0
   m_ActionAssetManager:
@@ -705,7 +708,7 @@ MonoBehaviour:
   m_Zoom: -1
   m_ScrollPosition: {x: 0, y: 0}
   m_SelectedObject: {fileID: 0}
-  m_SelectedSpriteRectGUID: 281bfdbffe0594d4aae9dd2447b2f04d
+  m_SelectedSpriteRectGUID: 00000000000000000000000000000000
   m_LastUsedModuleTypeName: 
 --- !u!114 &18
 MonoBehaviour:
@@ -809,7 +812,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1350
+  m_LastSelectedObjectID: 44482
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1515,9 +1518,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: aafaffffbafaffffd4faffffbcad0000
+      m_SelectedIDs: c2ad0000
+      m_LastClickedID: 44482
+      m_ExpandedIDs: d4faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1589,7 +1592,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/ScriptableObjects
+    - Assets/Scripts/Other
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1599,16 +1602,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/ScriptableObjects
+  - Assets/Scripts/Other
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\UnityProjects\Knight Reborn
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 35}
-    m_SelectedIDs: 5cc20000
-    m_LastClickedID: 49756
-    m_ExpandedIDs: 0000000080af000082af000084af000086af000088af00008aaf00008caf000038b0000000ca9a3bffffff7f
+    m_SelectedIDs: 86b00000
+    m_LastClickedID: 45190
+    m_ExpandedIDs: 0000000088af00008aaf00008caf00008eaf000090af000092af000094af000042b0000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1637,7 +1640,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000080af000082af000084af000086af000088af00008aaf00008caf0000
+    m_ExpandedIDs: 0000000088af00008aaf00008caf00008eaf000090af000092af000094af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1663,8 +1666,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: c2ad0000
+    m_LastClickedInstanceID: 44482
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000c0ad0000d4ac000000b5000086c2000090c2000062c200003cd60000eab3000004ba000026b00000
     m_RenameOverlay:
@@ -1683,7 +1686,7 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 13}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1774,7 +1777,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 194
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

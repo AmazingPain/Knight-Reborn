@@ -16,7 +16,6 @@ public class GameInput : MonoBehaviour
 
         playerInputActions = new PlayerInputActions();
         playerInputActions.Enable();
-
         playerInputActions.Combat.Attack.started += PlayerAttack_started;
     }
 

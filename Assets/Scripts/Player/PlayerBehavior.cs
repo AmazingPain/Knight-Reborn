@@ -10,7 +10,9 @@ public class PlayerBehavior : MonoBehaviour
     private Vector2 inputVector;
 
     private Rigidbody2D rb;
-    
+
+    public float jumpForce = 500f;
+
     private void Awake()
     {
         Instance = this;
@@ -22,13 +24,11 @@ public class PlayerBehavior : MonoBehaviour
         GameInput.Instance.OnPlayerAttack += GameInput_OnPlayerAttack;
     }
 
-    private void GameInput_OnPlayerAttack(object sender, System.EventArgs e)
-    {
-        ActiveWeapon.Instance.GetActiveWeapon().Attack();
-    }
+   
 
     private void Update()
     {
+        
         inputVector = GameInput.Instance.GetMovementVector();
     }
 
@@ -54,8 +54,6 @@ public class PlayerBehavior : MonoBehaviour
 
     public bool IsRunning()
     {
-    
-
         return isRunning;
     }
 
@@ -63,6 +61,11 @@ public class PlayerBehavior : MonoBehaviour
     {
         Vector3 playerScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
         return playerScreenPosition;
+    }
+
+    private void GameInput_OnPlayerAttack(object sender, System.EventArgs e)
+    {
+        ActiveWeapon.Instance.GetActiveWeapon().Attack();
     }
 }
 
