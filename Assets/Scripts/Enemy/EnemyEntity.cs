@@ -14,8 +14,6 @@ public class EnemyEntity : MonoBehaviour
     private BoxCollider2D boxCollider2D;
     public event EventHandler OnTakeDamage;
     public event EventHandler OnDeath;
-
-    //[SerializeField] private int maxHealth = 20;
     private int currentHealth;
 
 
@@ -46,9 +44,12 @@ public class EnemyEntity : MonoBehaviour
         polygonCollider2D.enabled = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Attack");
+        if (collision.transform.TryGetComponent(out PlayerBehavior player))
+        {
+            player.TakeDamage(transform, enemySO.enemyDamageAmount);
+        }
     }
 
     private void DetectDeath()

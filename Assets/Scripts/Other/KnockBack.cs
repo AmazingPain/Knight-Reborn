@@ -9,6 +9,8 @@ public class KnockBack : MonoBehaviour
     [SerializeField] private float knockBackMovingTimerMax = 0.3f;
     private float knockBackMovingTimer;
 
+    public bool IsGetKnockedBack { get; private set; }
+
 
     private void Awake()
     {
@@ -23,16 +25,19 @@ public class KnockBack : MonoBehaviour
         {
             StopKnockBackMovement();
         }
-    } 
+    }
 
     public void GetKnockedBack(Transform damageSource)
     {
+        IsGetKnockedBack = true;
         knockBackMovingTimer = knockBackMovingTimerMax;
-        Vector2 difference = (transform.position - damageSource.position).normalized * knockBackForce / rb.mass;
+        Vector2 difference = (transform.position - damageSource.position).normalized * knockBackForce;
         rb.AddForce(difference, ForceMode2D.Impulse);
     }
     private void StopKnockBackMovement()
     {
         rb.velocity = Vector2.zero;
+        IsGetKnockedBack = false;
+
     }
 }

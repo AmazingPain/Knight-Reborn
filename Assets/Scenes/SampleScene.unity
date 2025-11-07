@@ -209,7 +209,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingSpeed: 5
-  jumpForce: 10
 --- !u!50 &186991174
 Rigidbody2D:
   serializedVersion: 4
@@ -332,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f57161e141b18e4cbbade746eb24777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackForce: 3
+  knockBackForce: 2
   knockBackMovingTimerMax: 0.3
 --- !u!4 &199596041 stripped
 Transform:
